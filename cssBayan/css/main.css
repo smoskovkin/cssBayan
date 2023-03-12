@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 :root {
   --font-family: "Open Sans", sans-serif;
   --content-width: 70%;
@@ -196,6 +196,7 @@ body {
 }
 
 .accordion__content {
+  text-align: center;
   max-height: 0;
   padding: 0 1em;
   color: #2c3e50;
