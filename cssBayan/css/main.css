@@ -168,13 +168,11 @@ body {
   }
   .accordion:hover .accordion__label {
     color: inherit;
-    transition: color 0s;
-  }
-  .accordion .accordion__icon {
-    display: none;
+    transition: all 0.35s;
   }
   .accordion:hover .accordion__icon {
-    display: block;
+    opacity: 1;
+    transition: all 0.35s;
   }
   .accordion__item:hover .accordion__icon {
     transform: rotate(90deg);
@@ -221,8 +219,8 @@ body {
   padding: 0.75em;
   font-size: 1.75em;
   font-weight: bold;
+  color: black;
   background: green;
-  transition: all 0.35s;
   cursor: inherit;
 }
 @media (max-width: 1024px) {
@@ -236,6 +234,11 @@ body {
     padding: 0.25em;
     font-size: 1em;
   }
+}
+
+.accordion__icon {
+  opacity: 0;
+  color: black;
 }
 
 .accordion__content {
@@ -267,7 +270,8 @@ body {
   border-top: 0.1em solid blue;
 }
 
-.accordion__item:active .accordion__label {
+.accordion__item:active .accordion__label,
+.accordion__item:active .accordion__icon {
   color: orangered;
 }
 
